@@ -13,7 +13,7 @@ const Footer = () => {
           </span>
         </div>
         <p className="text-sm text-muted-foreground">
-          © {currentYear} Školka dřevin Dětkovice. Všechna práva vyhrazena.
+          © {currentYear} Školka dřevin Dětkovice
         </p>
       </div>
     </footer>

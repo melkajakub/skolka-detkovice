@@ -23,9 +23,9 @@ const ContactSection = () => {
               <div>
                 <h3 className="mb-1 font-medium text-foreground">Adresa</h3>
                 <p className="text-muted-foreground">
+                  Melka Jiří<br />
                   Dětkovice<br />
-                  798 43, okres Prostějov<br />
-                  Olomoucký kraj
+                  798 43, okres Prostějov
                 </p>
               </div>
             </div>
@@ -37,10 +37,10 @@ const ContactSection = () => {
               <div>
                 <h3 className="mb-1 font-medium text-foreground">Telefon</h3>
                 <a 
-                  href="tel:+420123456789" 
+                  href="tel:+420733741489" 
                   className="text-muted-foreground transition-colors hover:text-primary"
                 >
-                  +420 123 456 789
+                  +420 733 741 489
                 </a>
               </div>
             </div>
@@ -51,12 +51,9 @@ const ContactSection = () => {
               </div>
               <div>
                 <h3 className="mb-1 font-medium text-foreground">E-mail</h3>
-                <a 
-                  href="mailto:info@skolka-detkovice.cz" 
-                  className="text-muted-foreground transition-colors hover:text-primary"
-                >
-                  info@skolka-detkovice.cz
-                </a>
+                <p className="text-muted-foreground">
+                  Bude upřesněno
+                </p>
               </div>
             </div>
 
@@ -78,7 +75,7 @@ const ContactSection = () => {
           {/* Map placeholder */}
           <div className="overflow-hidden rounded-lg bg-secondary">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10404.67376024791!2d17.04!3d49.51!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713b5c8b7a6b7a7%3A0x400af0f66150540!2zRMSbdGtvdmljZQ!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2598.5!2d17.0372!3d49.5089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713b55c9e2b7a7f%3A0x400af0f661505e0!2zRMSbdGtvdmljZQ!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "300px" }}

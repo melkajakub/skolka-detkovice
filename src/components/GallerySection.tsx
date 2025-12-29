@@ -6,10 +6,10 @@ import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 
 const images = [
-  { src: gallery1, alt: "Mladý listnatý stromek v květináči" },
-  { src: gallery2, alt: "Řady jehličnatých sazenic" },
-  { src: gallery3, alt: "Okrasné keře a kvetoucí rostliny" },
-  { src: gallery4, alt: "Ovocné stromky v naší školce" },
+  { src: gallery1, alt: "Pohled na školku s vesnicí v pozadí" },
+  { src: gallery2, alt: "Vstupní brána do školky dřevin" },
+  { src: gallery3, alt: "Řady mladých stromků ve školce" },
+  { src: gallery4, alt: "Sazenice s tyčkami pro oporu" },
 ];
 
 const GallerySection = () => {

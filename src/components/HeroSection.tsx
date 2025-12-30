@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-nursery.jpg";
+import heroImage from "@/assets/hero-drone.jpg";
 import { TreeDeciduous } from "lucide-react";
 
 const HeroSection = () => {

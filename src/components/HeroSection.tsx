@@ -23,13 +23,13 @@ const HeroSection = () => {
           className="animate-fade-in mb-4 text-4xl font-semibold tracking-tight text-primary-foreground opacity-0 md:text-5xl lg:text-6xl"
           style={{ animationDelay: "0.4s" }}
         >
-          Školka dřevin Dětkovice
+          Školka Dětkovice
         </h1>
         <p 
-          className="animate-fade-in max-w-2xl text-lg text-primary-foreground/90 opacity-0 md:text-xl"
+          className="animate-fade-in max-w-2xl text-lg text-primary-foreground/90 opacity-0 md:text-xl lg:text-2xl"
           style={{ animationDelay: "0.6s" }}
         >
-          Kvalitní sazenice stromů a keřů z Hané
+          Vítejte v našem světě radosti a učení
         </p>
       </div>
 

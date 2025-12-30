@@ -8,7 +8,7 @@ const MapSection = () => {
         <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
           <iframe
             style={{ border: 'none' }}
-            src="https://frame.mapy.cz/s/kocaherude"
+            src="https://frame.mapy.cz/letecka?x=17.0790681&y=49.4157748&z=18"
             width="100%"
             height="400"
             frameBorder="0"

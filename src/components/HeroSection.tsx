@@ -29,7 +29,7 @@ const HeroSection = () => {
           className="animate-fade-in max-w-2xl text-lg text-primary-foreground/90 opacity-0 md:text-xl lg:text-2xl"
           style={{ animationDelay: "0.6s" }}
         >
-          Vítejte v našem světě radosti a učení
+          Kvalitní sazenice stromů a dřevin. Široký sortiment okrasných a lesních rostlin pro zahrady i parky. Navštivte nás!
         </p>
       </div>
 

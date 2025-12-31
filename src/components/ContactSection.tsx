@@ -24,8 +24,8 @@ const ContactSection = () => {
                 <h3 className="mb-1 font-medium text-foreground">Adresa</h3>
                 <p className="text-muted-foreground">
                   Melka Jiří<br />
-                  Dětkovice<br />
-                  798 43, okres Prostějov
+                  Určice 132<br />
+                  798 04, okres Prostějov
                 </p>
               </div>
             </div>
@@ -72,17 +72,17 @@ const ContactSection = () => {
             </div>
           </div>
 
-          {/* Map placeholder */}
+          {/* Map */}
           <div className="overflow-hidden rounded-lg bg-secondary">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2598.5!2d17.0372!3d49.5089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713b55c9e2b7a7f%3A0x400af0f661505e0!2zRMSbdGtvdmljZQ!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2598.5!2d17.0372!3d49.4789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713b4e8d8e8e8e8%3A0x400af0f661505e0!2zVXLEjWljZSAxMzI!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "300px" }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Mapa - Školka dřevin Dětkovice"
+              title="Mapa - Školka dřevin Určice"
             />
           </div>
         </div>

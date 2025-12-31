@@ -23,7 +23,7 @@ const HeroSection = () => {
           className="animate-fade-in mb-4 text-4xl font-semibold tracking-tight text-primary-foreground opacity-0 md:text-5xl lg:text-6xl"
           style={{ animationDelay: "0.4s" }}
         >
-          Školka Dětkovice
+          Školka Určice
         </h1>
         <p 
           className="animate-fade-in max-w-2xl text-lg text-primary-foreground/90 opacity-0 md:text-xl lg:text-2xl"
@@ -35,10 +35,7 @@ const HeroSection = () => {
 
       {/* Navigation */}
       <nav className="absolute left-0 right-0 top-0 z-20 px-6 py-4">
-        <div className="mx-auto flex max-w-6xl items-center justify-between">
-          <span className="font-serif text-lg font-medium text-primary-foreground">
-            Dětkovice
-          </span>
+        <div className="mx-auto flex max-w-6xl items-center justify-end">
           <div className="hidden gap-8 sm:flex">
             <a href="#o-nas" className="text-sm text-primary-foreground/80 transition-colors hover:text-primary-foreground">
               O nás

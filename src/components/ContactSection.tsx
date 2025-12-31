@@ -64,9 +64,7 @@ const ContactSection = () => {
               <div>
                 <h3 className="mb-1 font-medium text-foreground">Otevírací doba</h3>
                 <p className="text-muted-foreground">
-                  Po–Pá: 8:00 – 17:00<br />
-                  So: 8:00 – 12:00<br />
-                  Ne: po domluvě
+                  Dle telefonické domluvy
                 </p>
               </div>
             </div>

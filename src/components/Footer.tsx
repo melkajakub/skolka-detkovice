@@ -9,11 +9,11 @@ const Footer = () => {
         <div className="mb-4 flex items-center justify-center gap-2">
           <TreeDeciduous className="h-5 w-5 text-primary" />
           <span className="font-serif text-lg font-medium text-foreground">
-            Školka dřevin Dětkovice
+            Školka dřevin Určice
           </span>
         </div>
         <p className="text-sm text-muted-foreground">
-          © {currentYear} Školka dřevin Dětkovice
+          © {currentYear} Školka dřevin Určice
         </p>
       </div>
     </footer>

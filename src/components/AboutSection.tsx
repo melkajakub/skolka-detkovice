@@ -16,7 +16,7 @@ const AboutSection = () => {
         
         <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
           <p>
-            Nacházíme se v malebné obci <strong className="text-foreground">Dětkovice u Prostějova</strong>, 
+            Nacházíme se v obci <strong className="text-foreground">Určice u Prostějova</strong>, 
             v srdci úrodné Hané. Naše školka se specializuje na pěstování kvalitních 
             sazenic listnatých i jehličnatých stromů a okrasných keřů.
           </p>

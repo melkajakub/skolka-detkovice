@@ -1,12 +1,9 @@
 import HeroSection from "@/components/HeroSection";
 import VideoSection from "@/components/VideoSection";
 import AboutSection from "@/components/AboutSection";
-import GooglePhotosGallery from "@/components/GooglePhotosGallery";
+import GallerySection from "@/components/GallerySection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-
-// URL vašeho Google Photos alba - stačí změnit tuto URL pro jiné album
-const GOOGLE_PHOTOS_ALBUM_URL = "https://photos.app.goo.gl/AGV8rEEra15R94AS8";
 
 const Index = () => {
   return (
@@ -14,7 +11,7 @@ const Index = () => {
       <HeroSection />
       <VideoSection />
       <AboutSection />
-      <GooglePhotosGallery albumUrl={GOOGLE_PHOTOS_ALBUM_URL} />
+      <GallerySection />
       <ContactSection />
       <Footer />
     </main>

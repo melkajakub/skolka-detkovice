@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import SmartImage from "@/components/SmartImage";
 
 const BASE_PATH = '';
 
@@ -66,11 +67,10 @@ const GallerySection = () => {
               onClick={() => openLightbox(index)}
               className="group aspect-[3/2] overflow-hidden rounded-lg bg-muted shadow-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-shadow hover:shadow-xl"
             >
-              <img
+              <SmartImage
                 src={image.src}
                 alt={image.alt}
-                loading="lazy"
-                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                className="object-cover transition-transform duration-300 group-hover:scale-110"
               />
             </button>
           ))}
@@ -91,11 +91,13 @@ const GallerySection = () => {
                 <ChevronLeft className="h-6 w-6" />
               </button>
 
-              {/* Image */}
-              <img
+              {/* Image – only fetched after the user opens the lightbox */}
+              <SmartImage
                 src={images[selectedIndex].src}
                 alt={images[selectedIndex].alt}
-                className="max-h-[85vh] w-auto rounded-lg object-contain"
+                priority
+                wrapperClassName="max-h-[85vh] w-auto rounded-lg"
+                className="max-h-[85vh] w-auto object-contain"
               />
 
               {/* Next button */}

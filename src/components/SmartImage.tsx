@@ -6,22 +6,28 @@ interface SmartImageProps extends ImgHTMLAttributes<HTMLImageElement> {
   alt: string;
   /** Skip lazy loading (use for above-the-fold / LCP images). */
   priority?: boolean;
-  /** Wrapper className (the <img> uses className from rest props). */
+  /** Wrapper className. */
   wrapperClassName?: string;
-  /** Optional pre-generated low-res preview (data URL or path). */
+  /** Optional srcset for responsive delivery. */
+  srcSet?: string;
+  /** Optional sizes attribute paired with srcSet. */
+  sizes?: string;
+  /** Intrinsic width (used to reserve space → prevents CLS). */
+  width: number;
+  /** Intrinsic height (used to reserve space → prevents CLS). */
+  height: number;
+  /** Optional pre-generated low-res preview. */
   placeholderSrc?: string;
 }
 
 /**
  * SmartImage – progressive, bandwidth-friendly <img> replacement.
- *
- * Features:
  *  - native loading="lazy" + decoding="async" (overridable via `priority`)
- *  - IntersectionObserver gating so the real `src` is only assigned when the
- *    image enters (or is near) the viewport – saves data on mobile
- *  - Blurred placeholder (CSS shimmer or supplied `placeholderSrc`) shown
- *    until the full image finishes decoding, then crossfaded in
+ *  - IntersectionObserver gating so the real `src`/`srcset` are only assigned
+ *    when the image enters (or is near) the viewport
+ *  - Blurred placeholder shown until the image decodes, then crossfaded in
  *  - `fetchpriority="high"` for priority images (LCP)
+ *  - `width`/`height` attributes reserve space → no CLS
  */
 const SmartImage = ({
   src,
@@ -29,6 +35,10 @@ const SmartImage = ({
   priority = false,
   wrapperClassName,
   placeholderSrc,
+  srcSet,
+  sizes,
+  width,
+  height,
   className,
   onLoad,
   ...rest
@@ -65,8 +75,8 @@ const SmartImage = ({
         "relative block h-full w-full overflow-hidden bg-muted",
         wrapperClassName
       )}
+      style={{ aspectRatio: `${width} / ${height}` }}
     >
-      {/* Blurred placeholder layer */}
       {!loaded && (
         <span
           aria-hidden="true"
@@ -87,6 +97,10 @@ const SmartImage = ({
       <img
         ref={ref}
         src={inView ? src : undefined}
+        srcSet={inView ? srcSet : undefined}
+        sizes={sizes}
+        width={width}
+        height={height}
         alt={alt}
         loading={priority ? "eager" : "lazy"}
         decoding="async"

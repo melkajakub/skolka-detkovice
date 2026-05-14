@@ -1,4 +1,6 @@
-import heroImage from "@/assets/hero-nursery.jpg";
+import hero768 from "@/assets/hero-nursery-768.webp";
+import hero1280 from "@/assets/hero-nursery-1280.webp";
+import hero1920 from "@/assets/hero-nursery-1920.webp";
 import { TreeDeciduous } from "lucide-react";
 import SmartImage from "@/components/SmartImage";
 
@@ -8,10 +10,15 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <SmartImage
-          src={heroImage}
-          alt="Školka dřevin Dětkovice - panoramatický pohled na naši školku"
+          src={hero1280}
+          srcSet={`${hero768} 768w, ${hero1280} 1280w, ${hero1920} 1920w`}
+          sizes="100vw"
+          width={1920}
+          height={1080}
+          alt="Školka dřevin Určice – panoramatický pohled na naši školku"
           priority
-          className="object-cover"
+          wrapperClassName="absolute inset-0 h-full w-full"
+          className="h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-hero-overlay/40" />
       </div>
@@ -21,13 +28,13 @@ const HeroSection = () => {
         <div className="animate-fade-in opacity-0" style={{ animationDelay: "0.2s" }}>
           <TreeDeciduous className="mx-auto mb-4 h-12 w-12 text-primary-foreground" />
         </div>
-        <h1 
+        <h1
           className="animate-fade-in mb-4 text-4xl font-semibold tracking-tight text-primary-foreground opacity-0 md:text-5xl lg:text-6xl"
           style={{ animationDelay: "0.4s" }}
         >
           Školka Určice
         </h1>
-        <p 
+        <p
           className="animate-fade-in max-w-2xl text-lg text-primary-foreground/90 opacity-0 md:text-xl lg:text-2xl"
           style={{ animationDelay: "0.6s" }}
         >

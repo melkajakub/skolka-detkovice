@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
-const BASE_PATH = import.meta.env.PROD ? '/skolka-detkovice' : '';
+const BASE_PATH = '';
 
 const images = [
   { src: `${BASE_PATH}/images/photo1.jpg`, alt: "Školka dřevin - pohled 1" },

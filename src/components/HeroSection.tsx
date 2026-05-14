@@ -1,15 +1,17 @@
 import heroImage from "@/assets/hero-nursery.jpg";
 import { TreeDeciduous } from "lucide-react";
+import SmartImage from "@/components/SmartImage";
 
 const HeroSection = () => {
   return (
     <section className="relative h-[70vh] min-h-[500px] w-full overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img
+        <SmartImage
           src={heroImage}
           alt="Školka dřevin Dětkovice - panoramatický pohled na naši školku"
-          className="h-full w-full object-cover"
+          priority
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-hero-overlay/40" />
       </div>

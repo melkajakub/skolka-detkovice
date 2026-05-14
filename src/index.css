@@ -99,3 +99,8 @@
     text-wrap: balance;
   }
 }
+
+/* Sharper image scaling on high-DPI / mobile screens, lower data perception */
+img {
+  image-rendering: -webkit-optimize-contrast;
+}

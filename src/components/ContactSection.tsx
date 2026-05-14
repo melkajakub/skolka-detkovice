@@ -52,7 +52,7 @@ const ContactSection = () => {
               <div>
                 <h3 className="mb-1 font-medium text-foreground">E-mail</h3>
                 <p className="text-muted-foreground">
-                  Bude upřesněno
+                  jurajmelka@seznam.cz
                 </p>
               </div>
             </div>
